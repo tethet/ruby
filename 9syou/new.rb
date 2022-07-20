@@ -1,28 +1,26 @@
-#インスタンスメソッド
 class Car
-
-　　def move(direction,distance)
-　　    self.turn(direction)
-　　    self.run(distance)
-　　end
-　　
-    def turn(direction)
-        puts "#{direction}に曲がります"
+    def move(sayuu,distance)
+        self.turn(sayuu)
+        self.run(distance)
     end
     
-    def run(distance)
+    
+    def turn(sayuu)
+        puts "#{sayuu}に曲がります。"
+        
+    end
+    def run (distance)
         puts "車で#{distance}キロ走ります"
     end
 end
 
 car=Car.new
 car.move("右",5)
-#クラスメソッド
+
 class Car
     def self.run(distance)
-        puts "車で#{distance}キロ走ります"
-        
+    puts "車で#{distance}キロ走ります"
     end
-end 
+end
 
 Car.run(10)
